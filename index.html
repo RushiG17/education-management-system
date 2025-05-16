@@ -1,104 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Online Education Platform offering a wide range of courses, resources, and insights into prestigious institutions."
+    />
+    <meta name="author" content="Online Education Team" />
+    <meta property="og:title" content="Home - Online Education" />
+    <meta
+      property="og:description"
+      content="Online Education Platform offering a wide range of courses."
+    />
+    <meta property="og:image" content="./images/common/logo.png" />
+    <meta property="og:url" content="your-url" />
+    <meta property="og:type" content="website" />
+    <title>Home - Online Education</title>
+    <link rel="stylesheet" href="./style/home.css" />
+    <link rel="preload" href="./images/common/logo.png" as="image" />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="./style/home.css">
-</head>
-
-<body>
+  <body>
     <div class="container">
-        <nav class="navbar">
-            <a href="#" class="logo"><img src="./images/common/logo.png" alt="Logo"></a>
-            <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="pages/Course.html">Courses</a></li>
-                <li><a href="pages/Resources.html">Resources</a></li>
-                <li><a href="pages/Testimonials.html">Testimonials</a></li>
-                <li><a href="pages/ContactUs.html">Contact Us</a></li>
-                <li><a href="pages/AboutUs.html">About Us</a></li>
-                <li><a href="pages/Login.html">Login</a></li>
-            </ul>
+      <header>
+        <nav class="navbar" role="navigation" aria-label="Main Navigation">
+          <a href="#" class="logo" aria-label="Home Page">
+            <img src="./images/common/logo.png" alt="Online Education Logo" />
+          </a>
+          <ul>
+            <li>
+              <a href="./index.html" aria-label="Go to Home page">Home</a>
+            </li>
+            <li>
+              <a href="pages/Course.html" aria-label="Browse Courses"
+                >Courses</a
+              >
+            </li>
+            <li>
+              <a
+                href="pages/Resources.html"
+                aria-label="Access Learning Resources"
+                >Resources</a
+              >
+            </li>
+            <li>
+              <a href="pages/Testimonials.html" aria-label="Read Testimonials"
+                >Testimonials</a
+              >
+            </li>
+            <li>
+              <a href="pages/ContactUs.html" aria-label="Contact Us"
+                >Contact Us</a
+              >
+            </li>
+            <li>
+              <a href="pages/AboutUs.html" aria-label="Learn About Us"
+                >About Us</a
+              >
+            </li>
+            <li>
+              <a href="pages/Login.html" aria-label="Login to your account"
+                >Login</a
+              >
+            </li>
+          </ul>
         </nav>
+      </header>
 
-        <div class="intro-section">
-            <div class="content">
-                <h1 class="heading">ONLINE EDUCATION</h1>
-                <p>Welcome to a new era of learning! Our online education platform offers<br>
-                    you the flexibility to learn from anywhere, at any time.<br>
-                    Whether you're looking to advance your career, pick up new skills,or explore<br>
-                    a new hobby,our diverse range of courses is designed to meet your needs.</p>
-                <button type="button">Learn More</button>
-                <button type="button">Get Started</button>
+      <main>
+        <section class="intro-section">
+          <div class="content">
+            <h1 class="heading">ONLINE EDUCATION</h1>
+            <p>
+              Welcome to a new era of learning! Our online education platform
+              offers<br />
+              you the flexibility to learn from anywhere, at any time.<br />
+              Whether you're looking to advance your career, pick up new skills,
+              or explore<br />
+              a new hobby, our diverse range of courses is designed to meet your
+              needs.
+            </p>
+            <div class="buttons">
+              <button
+                type="button"
+                aria-label="Learn more about our online education platform"
+              >
+                Learn More
+              </button>
+              <button type="button" aria-label="Get started with our platform">
+                Get Started
+              </button>
             </div>
-            <div class="image">
-                <img src="./images/home/head/bg-img.png" alt="Educational Image">
-            </div>
-        </div>
+          </div>
+          <div class="image">
+            <img
+              src="./images/home/head/bg-img.png"
+              alt="An educational scene showcasing students learning in a modern classroom"
+              loading="lazy"
+            />
+          </div>
+        </section>
 
-        <h2 class="gallery-heading">INSTITUTIONAL INSIGHTS</h2>
-        <div class="gallery-container">
+        <section class="gallery-section">
+          <h2 class="gallery-heading">INSTITUTIONAL INSIGHTS</h2>
+          <div class="gallery-container">
             <div class="gallery">
-                <img src="./images/home/institutional-insights/clgimg1.jpg" alt="College 1">
-                <img src="./images/home/institutional-insights/library.jpg" alt="library 1">
-                <img src="./images/home/institutional-insights/clg img2.jpg" alt="College 2">
-                <img src="./images/home/institutional-insights/classimg.jpg" alt="Class 1">
-                <img src="./images/home/institutional-insights/library1.jpg" alt="library 2">
-                <img src="./images/home/institutional-insights/classimg1.jpg" alt="class 2">
-                <img src="./images/home/institutional-insights/audi1.jpg" alt="Audi 1">
-                <img src="./images/home/institutional-insights/clg img.jpg" alt="College 3">
-                <img src="./images/home/institutional-insights/audi2.jpg" alt="Audi 2">
+              <img
+                src="./images/home/institutional-insights/clg-img1.jpg"
+                alt="A college campus with students walking around"
+                loading="lazy"
+              />
+              <img
+                src="./images/home/institutional-insights/library.jpg"
+                alt="A library with students studying"
+                loading="lazy"
+              />
+              <img
+                src="./images/home/institutional-insights/clg-img2.jpg"
+                alt="Another college campus view"
+                loading="lazy"
+              />
+              <img
+                src="./images/home/institutional-insights/classimg.jpg"
+                alt="A classroom with students attending a lecture"
+                loading="lazy"
+              />
+              <img
+                src="./images/home/institutional-insights/library1.jpg"
+                alt="Modern library interior with shelves and study areas"
+                loading="lazy"
+              />
+              <img
+                src="./images/home/institutional-insights/classimg1.jpg"
+                alt="A classroom with students interacting during a lesson"
+                loading="lazy"
+              />
+              <img
+                src="./images/home/institutional-insights/audi1.jpg"
+                alt="A large auditorium with students watching a lecture"
+                loading="lazy"
+              />
+              <img
+                src="./images/home/institutional-insights/clg-img.jpg"
+                alt="A college campus building surrounded by greenery"
+                loading="lazy"
+              />
+              <img
+                src="./images/home/institutional-insights/audi2.jpg"
+                alt="A spacious auditorium setting with a stage"
+                loading="lazy"
+              />
             </div>
-        </div>
+          </div>
+        </section>
 
-        <h2 class="history-heading">Historical Monuments</h2>
-        <div class="histories">
+        <section class="history-section">
+          <h2 class="history-heading">Historical Monuments</h2>
+          <div class="histories">
             <div class="history">
-                <img src="./images/home/history-monuments/iitbombay.jpg" alt="iitbombay">
-                <div class="history-info">
-                    <h3>IIT BOMBAY</h3>
-                    <p>IIT Bombay was founded in 1958 with support from UNESCO and the Soviet Union. It began operations
-                        in Worli, Mumbai, before relocating to its current campus in Powai in 1959. Since then, it has
-                        grown to become one of India's top engineering institutions, renowned for its academic
-                        excellence and contributions to research and technology development.</p>
-                </div>
+              <img
+                src="./images/home/history-monuments/iitbombay.jpg"
+                alt="IIT Bombay - A historical campus with modern buildings"
+                loading="lazy"
+              />
+              <div class="history-info">
+                <h3>IIT BOMBAY</h3>
+                <p>
+                  IIT Bombay was founded in 1958 with support from UNESCO and
+                  the Soviet Union. It began operations in Worli, Mumbai, before
+                  relocating to its current campus in Powai in 1959. Since then,
+                  it has grown to become one of India's top engineering
+                  institutions, renowned for its academic excellence and
+                  contributions to research and technology development.
+                </p>
+              </div>
             </div>
             <div class="history">
-                <img src="./images/home/history-monuments/iitkharagpur.jpg" alt="iitkharagpur">
-                <div class="history-info">
-                    <h3>IIT KHARAGPUR</h3>
-                    <p>The Indian Institute of Technology Kharagpur (IIT Kharagpur), established in 1951, is the first
-                        IIT in India. It was founded in Hijli Detention Camp, a site with historical significance from
-                        the Indian freedom movement. Over the decades, it has grown into a premier institute of higher
-                        education, renowned for its engineering and technology programs.</p>
-                </div>
+              <img
+                src="./images/home/history-monuments/iitkharagpur.jpg"
+                alt="IIT Kharagpur - India's first IIT campus located in a scenic area"
+                loading="lazy"
+              />
+              <div class="history-info">
+                <h3>IIT KHARAGPUR</h3>
+                <p>
+                  The Indian Institute of Technology Kharagpur (IIT Kharagpur),
+                  established in 1951, is the first IIT in India. It was founded
+                  in Hijli Detention Camp, a site with historical significance
+                  from the Indian freedom movement. Over the decades, it has
+                  grown into a premier institute of higher education, renowned
+                  for its engineering and technology programs.
+                </p>
+              </div>
             </div>
             <div class="history">
-                <img src="./images/home/history-monuments/iitdelhi.jpg" alt="iitkharagpur">
-                <div class="history-info">
-                    <h3>IIT DELHI</h3>
-                    <p>
-                        Indian Institute of Technology Delhi (IIT Delhi), established in 1961, is one of India's premier
-                        engineering institutions. Originally named College of Engineering & Technology, it gained the
-                        IIT status in 1963. Located in Hauz Khas, Delhi, it has a strong reputation for excellence in
-                        research, education, and innovation in engineering and technology.</p>
-                </div>
+              <img
+                src="./images/home/history-monuments/iitdelhi.jpg"
+                alt="IIT Delhi - A premier engineering institute known for research and innovation"
+                loading="lazy"
+              />
+              <div class="history-info">
+                <h3>IIT DELHI</h3>
+                <p>
+                  Indian Institute of Technology Delhi (IIT Delhi), established
+                  in 1961, is one of India's premier engineering institutions.
+                  Originally named College of Engineering & Technology, it
+                  gained the IIT status in 1963. Located in Hauz Khas, Delhi, it
+                  has a strong reputation for excellence in research, education,
+                  and innovation in engineering and technology.
+                </p>
+              </div>
             </div>
             <div class="history">
-                <img src="./images/home/history-monuments/iitmadras.jpeg" alt="iitkharagpur">
-                <div class="history-info">
-                    <h3>IIT MADRAS</h3>
-                    <p>
+              <img
+                src="./images/home/history-monuments/iitmadras.jpeg"
+                alt="IIT Madras - Historic institution in Chennai, India with scenic surroundings"
+                loading="lazy"
+              />
+              <div class="history-info">
+                <h3>IIT MADRAS</h3>
+                <p>
+                  Indian Institute of Technology Madras (IIT Madras),
+                  established in 1959 with assistance from the Government of
+                  West Germany, is located in Chennai. Renowned for its scenic
+                  campus and excellence in engineering education and research,
+                  IIT Madras is a top-ranked institution in India.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
 
-                        Indian Institute of Technology Madras (IIT Madras), established in 1959 with assistance from the
-                        Government of West Germany, is located in Chennai. Renowned for its scenic campus and excellence
-                        in engineering education and research, IIT Madras is a top-ranked institution in India.</p>
-                </div>
-            </div>
-        </div>
+      <footer class="footer">
+        <p>&copy; 2024 Online Education Platform. All Rights Reserved.</p>
+        <ul>
+          <li>
+            <a href="#" aria-label="Read our Privacy Policy">Privacy Policy</a>
+          </li>
+          <li>
+            <a href="#" aria-label="Read our Terms of Service"
+              >Terms of Service</a
+            >
+          </li>
+        </ul>
+      </footer>
     </div>
-</body>
-
+  </body>
 </html>
